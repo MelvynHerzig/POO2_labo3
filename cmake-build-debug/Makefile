@@ -142,167 +142,59 @@ labo3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/build
 .PHONY : labo3/fast
 
-Actors/Behaviors/ICanDrive.obj: Actors/Behaviors/ICanDrive.cpp.obj
+Actors/Driver.obj: Actors/Driver.cpp.obj
 
-.PHONY : Actors/Behaviors/ICanDrive.obj
-
-# target to build an object file
-Actors/Behaviors/ICanDrive.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Behaviors/ICanDrive.cpp.obj
-.PHONY : Actors/Behaviors/ICanDrive.cpp.obj
-
-Actors/Behaviors/ICanDrive.i: Actors/Behaviors/ICanDrive.cpp.i
-
-.PHONY : Actors/Behaviors/ICanDrive.i
-
-# target to preprocess a source file
-Actors/Behaviors/ICanDrive.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Behaviors/ICanDrive.cpp.i
-.PHONY : Actors/Behaviors/ICanDrive.cpp.i
-
-Actors/Behaviors/ICanDrive.s: Actors/Behaviors/ICanDrive.cpp.s
-
-.PHONY : Actors/Behaviors/ICanDrive.s
-
-# target to generate assembly for a file
-Actors/Behaviors/ICanDrive.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Behaviors/ICanDrive.cpp.s
-.PHONY : Actors/Behaviors/ICanDrive.cpp.s
-
-Actors/Behaviors/ICannotDrive.obj: Actors/Behaviors/ICannotDrive.cpp.obj
-
-.PHONY : Actors/Behaviors/ICannotDrive.obj
+.PHONY : Actors/Driver.obj
 
 # target to build an object file
-Actors/Behaviors/ICannotDrive.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Behaviors/ICannotDrive.cpp.obj
-.PHONY : Actors/Behaviors/ICannotDrive.cpp.obj
+Actors/Driver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Driver.cpp.obj
+.PHONY : Actors/Driver.cpp.obj
 
-Actors/Behaviors/ICannotDrive.i: Actors/Behaviors/ICannotDrive.cpp.i
+Actors/Driver.i: Actors/Driver.cpp.i
 
-.PHONY : Actors/Behaviors/ICannotDrive.i
+.PHONY : Actors/Driver.i
 
 # target to preprocess a source file
-Actors/Behaviors/ICannotDrive.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Behaviors/ICannotDrive.cpp.i
-.PHONY : Actors/Behaviors/ICannotDrive.cpp.i
+Actors/Driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Driver.cpp.i
+.PHONY : Actors/Driver.cpp.i
 
-Actors/Behaviors/ICannotDrive.s: Actors/Behaviors/ICannotDrive.cpp.s
+Actors/Driver.s: Actors/Driver.cpp.s
 
-.PHONY : Actors/Behaviors/ICannotDrive.s
+.PHONY : Actors/Driver.s
 
 # target to generate assembly for a file
-Actors/Behaviors/ICannotDrive.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Behaviors/ICannotDrive.cpp.s
-.PHONY : Actors/Behaviors/ICannotDrive.cpp.s
+Actors/Driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Driver.cpp.s
+.PHONY : Actors/Driver.cpp.s
 
-Actors/Behaviors/IFamilyMember.obj: Actors/Behaviors/IFamilyMember.cpp.obj
+Actors/NonDriver.obj: Actors/NonDriver.cpp.obj
 
-.PHONY : Actors/Behaviors/IFamilyMember.obj
+.PHONY : Actors/NonDriver.obj
 
 # target to build an object file
-Actors/Behaviors/IFamilyMember.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Behaviors/IFamilyMember.cpp.obj
-.PHONY : Actors/Behaviors/IFamilyMember.cpp.obj
+Actors/NonDriver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/NonDriver.cpp.obj
+.PHONY : Actors/NonDriver.cpp.obj
 
-Actors/Behaviors/IFamilyMember.i: Actors/Behaviors/IFamilyMember.cpp.i
+Actors/NonDriver.i: Actors/NonDriver.cpp.i
 
-.PHONY : Actors/Behaviors/IFamilyMember.i
-
-# target to preprocess a source file
-Actors/Behaviors/IFamilyMember.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Behaviors/IFamilyMember.cpp.i
-.PHONY : Actors/Behaviors/IFamilyMember.cpp.i
-
-Actors/Behaviors/IFamilyMember.s: Actors/Behaviors/IFamilyMember.cpp.s
-
-.PHONY : Actors/Behaviors/IFamilyMember.s
-
-# target to generate assembly for a file
-Actors/Behaviors/IFamilyMember.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Behaviors/IFamilyMember.cpp.s
-.PHONY : Actors/Behaviors/IFamilyMember.cpp.s
-
-Actors/Behaviors/INotFamilyMember.obj: Actors/Behaviors/INotFamilyMember.cpp.obj
-
-.PHONY : Actors/Behaviors/INotFamilyMember.obj
-
-# target to build an object file
-Actors/Behaviors/INotFamilyMember.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Behaviors/INotFamilyMember.cpp.obj
-.PHONY : Actors/Behaviors/INotFamilyMember.cpp.obj
-
-Actors/Behaviors/INotFamilyMember.i: Actors/Behaviors/INotFamilyMember.cpp.i
-
-.PHONY : Actors/Behaviors/INotFamilyMember.i
+.PHONY : Actors/NonDriver.i
 
 # target to preprocess a source file
-Actors/Behaviors/INotFamilyMember.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Behaviors/INotFamilyMember.cpp.i
-.PHONY : Actors/Behaviors/INotFamilyMember.cpp.i
+Actors/NonDriver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/NonDriver.cpp.i
+.PHONY : Actors/NonDriver.cpp.i
 
-Actors/Behaviors/INotFamilyMember.s: Actors/Behaviors/INotFamilyMember.cpp.s
+Actors/NonDriver.s: Actors/NonDriver.cpp.s
 
-.PHONY : Actors/Behaviors/INotFamilyMember.s
-
-# target to generate assembly for a file
-Actors/Behaviors/INotFamilyMember.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Behaviors/INotFamilyMember.cpp.s
-.PHONY : Actors/Behaviors/INotFamilyMember.cpp.s
-
-Actors/Child.obj: Actors/Child.cpp.obj
-
-.PHONY : Actors/Child.obj
-
-# target to build an object file
-Actors/Child.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Child.cpp.obj
-.PHONY : Actors/Child.cpp.obj
-
-Actors/Child.i: Actors/Child.cpp.i
-
-.PHONY : Actors/Child.i
-
-# target to preprocess a source file
-Actors/Child.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Child.cpp.i
-.PHONY : Actors/Child.cpp.i
-
-Actors/Child.s: Actors/Child.cpp.s
-
-.PHONY : Actors/Child.s
+.PHONY : Actors/NonDriver.s
 
 # target to generate assembly for a file
-Actors/Child.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Child.cpp.s
-.PHONY : Actors/Child.cpp.s
-
-Actors/Parent.obj: Actors/Parent.cpp.obj
-
-.PHONY : Actors/Parent.obj
-
-# target to build an object file
-Actors/Parent.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Parent.cpp.obj
-.PHONY : Actors/Parent.cpp.obj
-
-Actors/Parent.i: Actors/Parent.cpp.i
-
-.PHONY : Actors/Parent.i
-
-# target to preprocess a source file
-Actors/Parent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Parent.cpp.i
-.PHONY : Actors/Parent.cpp.i
-
-Actors/Parent.s: Actors/Parent.cpp.s
-
-.PHONY : Actors/Parent.s
-
-# target to generate assembly for a file
-Actors/Parent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Parent.cpp.s
-.PHONY : Actors/Parent.cpp.s
+Actors/NonDriver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/NonDriver.cpp.s
+.PHONY : Actors/NonDriver.cpp.s
 
 Actors/Person.obj: Actors/Person.cpp.obj
 
@@ -330,60 +222,6 @@ Actors/Person.s: Actors/Person.cpp.s
 Actors/Person.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Person.cpp.s
 .PHONY : Actors/Person.cpp.s
-
-Actors/Policeman.obj: Actors/Policeman.cpp.obj
-
-.PHONY : Actors/Policeman.obj
-
-# target to build an object file
-Actors/Policeman.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Policeman.cpp.obj
-.PHONY : Actors/Policeman.cpp.obj
-
-Actors/Policeman.i: Actors/Policeman.cpp.i
-
-.PHONY : Actors/Policeman.i
-
-# target to preprocess a source file
-Actors/Policeman.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Policeman.cpp.i
-.PHONY : Actors/Policeman.cpp.i
-
-Actors/Policeman.s: Actors/Policeman.cpp.s
-
-.PHONY : Actors/Policeman.s
-
-# target to generate assembly for a file
-Actors/Policeman.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Policeman.cpp.s
-.PHONY : Actors/Policeman.cpp.s
-
-Actors/Thief.obj: Actors/Thief.cpp.obj
-
-.PHONY : Actors/Thief.obj
-
-# target to build an object file
-Actors/Thief.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Thief.cpp.obj
-.PHONY : Actors/Thief.cpp.obj
-
-Actors/Thief.i: Actors/Thief.cpp.i
-
-.PHONY : Actors/Thief.i
-
-# target to preprocess a source file
-Actors/Thief.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Thief.cpp.i
-.PHONY : Actors/Thief.cpp.i
-
-Actors/Thief.s: Actors/Thief.cpp.s
-
-.PHONY : Actors/Thief.s
-
-# target to generate assembly for a file
-Actors/Thief.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Thief.cpp.s
-.PHONY : Actors/Thief.cpp.s
 
 Containers/Bank.obj: Containers/Bank.cpp.obj
 
@@ -438,6 +276,33 @@ Containers/Boat.s: Containers/Boat.cpp.s
 Containers/Boat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Containers/Boat.cpp.s
 .PHONY : Containers/Boat.cpp.s
+
+Containers/Container.obj: Containers/Container.cpp.obj
+
+.PHONY : Containers/Container.obj
+
+# target to build an object file
+Containers/Container.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Containers/Container.cpp.obj
+.PHONY : Containers/Container.cpp.obj
+
+Containers/Container.i: Containers/Container.cpp.i
+
+.PHONY : Containers/Container.i
+
+# target to preprocess a source file
+Containers/Container.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Containers/Container.cpp.i
+.PHONY : Containers/Container.cpp.i
+
+Containers/Container.s: Containers/Container.cpp.s
+
+.PHONY : Containers/Container.s
+
+# target to generate assembly for a file
+Containers/Container.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Containers/Container.cpp.s
+.PHONY : Containers/Container.cpp.s
 
 Controller.obj: Controller.cpp.obj
 
@@ -502,39 +367,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... labo3
-	@echo ... Actors/Behaviors/ICanDrive.obj
-	@echo ... Actors/Behaviors/ICanDrive.i
-	@echo ... Actors/Behaviors/ICanDrive.s
-	@echo ... Actors/Behaviors/ICannotDrive.obj
-	@echo ... Actors/Behaviors/ICannotDrive.i
-	@echo ... Actors/Behaviors/ICannotDrive.s
-	@echo ... Actors/Behaviors/IFamilyMember.obj
-	@echo ... Actors/Behaviors/IFamilyMember.i
-	@echo ... Actors/Behaviors/IFamilyMember.s
-	@echo ... Actors/Behaviors/INotFamilyMember.obj
-	@echo ... Actors/Behaviors/INotFamilyMember.i
-	@echo ... Actors/Behaviors/INotFamilyMember.s
-	@echo ... Actors/Child.obj
-	@echo ... Actors/Child.i
-	@echo ... Actors/Child.s
-	@echo ... Actors/Parent.obj
-	@echo ... Actors/Parent.i
-	@echo ... Actors/Parent.s
+	@echo ... Actors/Driver.obj
+	@echo ... Actors/Driver.i
+	@echo ... Actors/Driver.s
+	@echo ... Actors/NonDriver.obj
+	@echo ... Actors/NonDriver.i
+	@echo ... Actors/NonDriver.s
 	@echo ... Actors/Person.obj
 	@echo ... Actors/Person.i
 	@echo ... Actors/Person.s
-	@echo ... Actors/Policeman.obj
-	@echo ... Actors/Policeman.i
-	@echo ... Actors/Policeman.s
-	@echo ... Actors/Thief.obj
-	@echo ... Actors/Thief.i
-	@echo ... Actors/Thief.s
 	@echo ... Containers/Bank.obj
 	@echo ... Containers/Bank.i
 	@echo ... Containers/Bank.s
 	@echo ... Containers/Boat.obj
 	@echo ... Containers/Boat.i
 	@echo ... Containers/Boat.s
+	@echo ... Containers/Container.obj
+	@echo ... Containers/Container.i
+	@echo ... Containers/Container.s
 	@echo ... Controller.obj
 	@echo ... Controller.i
 	@echo ... Controller.s

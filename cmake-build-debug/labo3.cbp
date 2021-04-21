@@ -82,58 +82,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Behaviors/ICanDrive.cpp">
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Driver.cpp">
 			<Option target="labo3"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Behaviors/ICanDrive.h">
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Driver.h">
 			<Option target="labo3"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Behaviors/ICannotDrive.cpp">
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/NonDriver.cpp">
 			<Option target="labo3"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Behaviors/ICannotDrive.h">
-			<Option target="labo3"/>
-		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Behaviors/IFamilyMember.cpp">
-			<Option target="labo3"/>
-		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Behaviors/IFamilyMember.h">
-			<Option target="labo3"/>
-		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Behaviors/INotFamilyMember.cpp">
-			<Option target="labo3"/>
-		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Behaviors/INotFamilyMember.h">
-			<Option target="labo3"/>
-		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Child.cpp">
-			<Option target="labo3"/>
-		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Child.h">
-			<Option target="labo3"/>
-		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Parent.cpp">
-			<Option target="labo3"/>
-		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Parent.h">
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/NonDriver.h">
 			<Option target="labo3"/>
 		</Unit>
 		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Person.cpp">
 			<Option target="labo3"/>
 		</Unit>
 		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Person.h">
-			<Option target="labo3"/>
-		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Policeman.cpp">
-			<Option target="labo3"/>
-		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Policeman.h">
-			<Option target="labo3"/>
-		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Thief.cpp">
-			<Option target="labo3"/>
-		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Thief.h">
 			<Option target="labo3"/>
 		</Unit>
 		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Bank.cpp">
@@ -146,6 +110,9 @@
 			<Option target="labo3"/>
 		</Unit>
 		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Boat.h">
+			<Option target="labo3"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Container.cpp">
 			<Option target="labo3"/>
 		</Unit>
 		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Container.h">

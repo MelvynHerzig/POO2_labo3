@@ -1,10 +1,10 @@
-/*
- -----------------------------------------------------------------------------------
- Laboratoire : 03
- Fichier     : Bank.cpp
- Auteur(s)   : Forestier Quentin & Herzig Melvyn
- Date        : 14/04/2021
- -----------------------------------------------------------------------------------
- */
-
 #include "Bank.h"
+
+Bank::Bank (const std::string &name) : Container(name)
+{}
+
+std::ostream &Bank::toStream (std::ostream &os) const
+{
+   return os << name << ": " << personsToString();
+}
+
