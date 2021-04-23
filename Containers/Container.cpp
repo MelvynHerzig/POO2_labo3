@@ -89,17 +89,19 @@ string Container::personsToString () const
    return ss.str();
 }
 
-bool Container::isValid () const
+string Container::isValid () const
 {
    for(const Person* person : persons)
    {
-      if( not person->checkState(persons))
+      const Person* problematicPerson = person->checkState(persons);
+
+      if( problematicPerson != nullptr)
       {
-         return false;
+         return person->getErrorMessage();
       }
    }
 
-   return true;
+   return string{};
 }
 
 

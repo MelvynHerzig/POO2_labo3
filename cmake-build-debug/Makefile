@@ -142,59 +142,59 @@ labo3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/build
 .PHONY : labo3/fast
 
-Actors/Driver.obj: Actors/Driver.cpp.obj
+Actors/DependentPerson.obj: Actors/DependentPerson.cpp.obj
 
-.PHONY : Actors/Driver.obj
-
-# target to build an object file
-Actors/Driver.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Driver.cpp.obj
-.PHONY : Actors/Driver.cpp.obj
-
-Actors/Driver.i: Actors/Driver.cpp.i
-
-.PHONY : Actors/Driver.i
-
-# target to preprocess a source file
-Actors/Driver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Driver.cpp.i
-.PHONY : Actors/Driver.cpp.i
-
-Actors/Driver.s: Actors/Driver.cpp.s
-
-.PHONY : Actors/Driver.s
-
-# target to generate assembly for a file
-Actors/Driver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Driver.cpp.s
-.PHONY : Actors/Driver.cpp.s
-
-Actors/NonDriver.obj: Actors/NonDriver.cpp.obj
-
-.PHONY : Actors/NonDriver.obj
+.PHONY : Actors/DependentPerson.obj
 
 # target to build an object file
-Actors/NonDriver.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/NonDriver.cpp.obj
-.PHONY : Actors/NonDriver.cpp.obj
+Actors/DependentPerson.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/DependentPerson.cpp.obj
+.PHONY : Actors/DependentPerson.cpp.obj
 
-Actors/NonDriver.i: Actors/NonDriver.cpp.i
+Actors/DependentPerson.i: Actors/DependentPerson.cpp.i
 
-.PHONY : Actors/NonDriver.i
+.PHONY : Actors/DependentPerson.i
 
 # target to preprocess a source file
-Actors/NonDriver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/NonDriver.cpp.i
-.PHONY : Actors/NonDriver.cpp.i
+Actors/DependentPerson.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/DependentPerson.cpp.i
+.PHONY : Actors/DependentPerson.cpp.i
 
-Actors/NonDriver.s: Actors/NonDriver.cpp.s
+Actors/DependentPerson.s: Actors/DependentPerson.cpp.s
 
-.PHONY : Actors/NonDriver.s
+.PHONY : Actors/DependentPerson.s
 
 # target to generate assembly for a file
-Actors/NonDriver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/NonDriver.cpp.s
-.PHONY : Actors/NonDriver.cpp.s
+Actors/DependentPerson.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/DependentPerson.cpp.s
+.PHONY : Actors/DependentPerson.cpp.s
+
+Actors/IndependentPerson.obj: Actors/IndependentPerson.cpp.obj
+
+.PHONY : Actors/IndependentPerson.obj
+
+# target to build an object file
+Actors/IndependentPerson.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/IndependentPerson.cpp.obj
+.PHONY : Actors/IndependentPerson.cpp.obj
+
+Actors/IndependentPerson.i: Actors/IndependentPerson.cpp.i
+
+.PHONY : Actors/IndependentPerson.i
+
+# target to preprocess a source file
+Actors/IndependentPerson.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/IndependentPerson.cpp.i
+.PHONY : Actors/IndependentPerson.cpp.i
+
+Actors/IndependentPerson.s: Actors/IndependentPerson.cpp.s
+
+.PHONY : Actors/IndependentPerson.s
+
+# target to generate assembly for a file
+Actors/IndependentPerson.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/IndependentPerson.cpp.s
+.PHONY : Actors/IndependentPerson.cpp.s
 
 Actors/Person.obj: Actors/Person.cpp.obj
 
@@ -367,12 +367,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... labo3
-	@echo ... Actors/Driver.obj
-	@echo ... Actors/Driver.i
-	@echo ... Actors/Driver.s
-	@echo ... Actors/NonDriver.obj
-	@echo ... Actors/NonDriver.i
-	@echo ... Actors/NonDriver.s
+	@echo ... Actors/DependentPerson.obj
+	@echo ... Actors/DependentPerson.i
+	@echo ... Actors/DependentPerson.s
+	@echo ... Actors/IndependentPerson.obj
+	@echo ... Actors/IndependentPerson.i
+	@echo ... Actors/IndependentPerson.s
 	@echo ... Actors/Person.obj
 	@echo ... Actors/Person.i
 	@echo ... Actors/Person.s

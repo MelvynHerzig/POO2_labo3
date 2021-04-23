@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Driver.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/DependentPerson.h
+string
+-
 Person.h
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Person.h
 
-C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/NonDriver.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/IndependentPerson.cpp
+IndependentPerson.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/IndependentPerson.h
+string
+-
+
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/IndependentPerson.h
 Person.h
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Person.h
 
@@ -53,12 +61,20 @@ iostream
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Controller.h
 cstdlib
 -
-Actors/Driver.h
-C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Driver.h
-Actors/NonDriver.h
-C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/NonDriver.h
+Actors/IndependentPerson.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/IndependentPerson.h
+Actors/DependentPerson.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/DependentPerson.h
 Containers/Bank.h
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Bank.h
 Containers/Boat.h
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Boat.h
+
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/main.cpp
+iostream
+-
+cstdlib
+-
+Controller.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Controller.h
 

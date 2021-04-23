@@ -18,45 +18,45 @@ Controller::Controller () : leftBank("Gauche"), rightBank("Droite"), boat(2, &le
    turn = 0;
 
    // Création des personnages
-   auto thief = new NonDriver {"voleur"};
+   auto thief = new DependentPerson {"voleur"};
    persons.emplace_back(thief);
 
-   auto policeman = new Driver {"policier"};
+   auto policeman = new IndependentPerson {"policier"};
    persons.emplace_back(policeman);
 
-   auto julie = new NonDriver {"julie"};
+   auto julie = new DependentPerson {"julie"};
    persons.emplace_back(julie);
 
-   auto jeanne = new NonDriver {"jeanne"};
+   auto jeanne = new DependentPerson {"jeanne"};
    persons.emplace_back(jeanne);
 
-   auto mother = new Driver{"mere"};
+   auto mother = new IndependentPerson{"mere"};
    persons.emplace_back(mother);
 
-   auto paul = new NonDriver {"paul"};
+   auto paul = new DependentPerson {"paul"};
    persons.emplace_back(paul);
 
-   auto pierre = new NonDriver {"pierre"};
+   auto pierre = new DependentPerson {"pierre"};
    persons.emplace_back(pierre);
 
-   auto father = new Driver{"pere"};
+   auto father = new IndependentPerson{"pere"};
    persons.emplace_back(father);
 
    // Définition des relations.
-   thief->setTutor(policeman);
-   thief->setIncopatibilityWith({mother, father, paul, pierre, julie, jeanne});
+   thief->setRule(policeman, {mother, father, paul, pierre, julie, jeanne});
+   thief->setErrorMessage("Le voleur ne peut rester seul avec la famille.");
 
-   paul->setTutor(father);
-   paul->setIncopatibilityWith({mother});
+   paul->setRule(father, {mother});
+   paul->setErrorMessage(paul->getName() + " ne peut rester seule avec son " + mother->getName() + " sans sa " + father->getName());
 
-   pierre->setTutor(father);
-   pierre->setIncopatibilityWith({mother});
+   pierre->setRule(father, {mother});
+   pierre->setErrorMessage(pierre->getName() + " ne peut rester seule avec son " + mother->getName() + " sans sa " + father->getName());
 
-   julie->setTutor(mother);
-   julie->setIncopatibilityWith({father});
+   julie->setRule(mother, {father});
+   julie->setErrorMessage(julie->getName() + " ne peut rester seule avec son " + father->getName() + " sans sa " + mother->getName());
 
-   jeanne->setTutor(mother);
-   jeanne->setIncopatibilityWith({father});
+   jeanne->setRule(mother, {father});
+   jeanne->setErrorMessage(jeanne->getName() + " ne peut rester seule avec son " + father->getName() + " sans sa " + mother->getName());
 
    // Préparation des rives
    resetContainers();
@@ -202,15 +202,19 @@ void Controller::tryMovePerson (Container& from, Container& to, const string &na
 
    from.removePerson(p);
 
-   if(not from.isValid())
+   string result = from.isValid();
+   if(not result.empty())
    {
+      cout << result << endl;
       from.addPerson(p);
       return;
    }
 
    //Modification et vérification de to.
-   if(not to.addPerson(p) || not to.isValid())
+   result = to.isValid();
+   if(not result.empty())
    {
+      cout << result << endl;
       to.removePerson(p);
       from.addPerson(p);
    }

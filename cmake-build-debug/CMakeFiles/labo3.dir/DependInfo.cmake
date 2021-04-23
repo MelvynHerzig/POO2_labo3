@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Driver.cpp" "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/cmake-build-debug/CMakeFiles/labo3.dir/Actors/Driver.cpp.obj"
-  "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/NonDriver.cpp" "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/cmake-build-debug/CMakeFiles/labo3.dir/Actors/NonDriver.cpp.obj"
+  "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/DependentPerson.cpp" "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/cmake-build-debug/CMakeFiles/labo3.dir/Actors/DependentPerson.cpp.obj"
+  "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/IndependentPerson.cpp" "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/cmake-build-debug/CMakeFiles/labo3.dir/Actors/IndependentPerson.cpp.obj"
   "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Person.cpp" "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/cmake-build-debug/CMakeFiles/labo3.dir/Actors/Person.cpp.obj"
   "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Bank.cpp" "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/cmake-build-debug/CMakeFiles/labo3.dir/Containers/Bank.cpp.obj"
   "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Boat.cpp" "C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/cmake-build-debug/CMakeFiles/labo3.dir/Containers/Boat.cpp.obj"

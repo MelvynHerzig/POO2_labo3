@@ -13,8 +13,6 @@
  */
 class Bank : public Container
 {
-private:
-
 public:
 
    /**

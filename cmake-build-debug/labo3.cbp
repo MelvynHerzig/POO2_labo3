@@ -82,16 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Driver.cpp">
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/DependentPerson.cpp">
 			<Option target="labo3"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Driver.h">
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/DependentPerson.h">
 			<Option target="labo3"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/NonDriver.cpp">
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/IndependentPerson.cpp">
 			<Option target="labo3"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/NonDriver.h">
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/IndependentPerson.h">
 			<Option target="labo3"/>
 		</Unit>
 		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Person.cpp">

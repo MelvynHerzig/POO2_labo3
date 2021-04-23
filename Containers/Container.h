@@ -100,9 +100,10 @@ public:
 
    /**
     * @brief Vérifie si les personnes peuvent être ensembles.
-    * @return Vrai si il n'y a aucun conflit.
+    * @return Retourne un string vide si c'est le cas sinon un
+    *         descriptif de la raison.
     */
-   bool isValid() const;
+   std::string isValid() const;
 
    /**
     * @brief Insère un conteneur dans un flux.

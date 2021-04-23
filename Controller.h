@@ -3,8 +3,8 @@
 
 
 #include <cstdlib> // size_t
-#include "Actors/Driver.h"
-#include "Actors/NonDriver.h"
+#include "Actors/IndependentPerson.h"
+#include "Actors/DependentPerson.h"
 #include "Containers/Bank.h"
 #include "Containers/Boat.h"
 
