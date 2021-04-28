@@ -96,14 +96,13 @@ public:
     * @return Retourne le pointeur de la personne correspondante si elle existe
     *         autrement nullptr.
     */
-   const Person* findByName(const std::string name) const;
+   const Person* findByName(const std::string& name) const;
 
    /**
     * @brief Vérifie si les personnes peuvent être ensembles.
-    * @return Retourne un string vide si c'est le cas sinon un
-    *         descriptif de la raison.
+    * @return Retourne un nullptr si c'est le cas sinon la personne qui a des soucis.
     */
-   std::string isValid() const;
+   const Person* isValid() const;
 
    /**
     * @brief Insère un conteneur dans un flux.

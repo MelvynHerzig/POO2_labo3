@@ -180,6 +180,32 @@ CMakeFiles/labo3.dir/Actors/DependentPerson.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo3.dir/Actors/DependentPerson.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo3\POO-labo3\Actors\DependentPerson.cpp" -o CMakeFiles\labo3.dir\Actors\DependentPerson.cpp.s
 
+CMakeFiles/labo3.dir/Actors/Child.cpp.obj: CMakeFiles/labo3.dir/flags.make
+CMakeFiles/labo3.dir/Actors/Child.cpp.obj: ../Actors/Child.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo3\POO-labo3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/labo3.dir/Actors/Child.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\labo3.dir\Actors\Child.cpp.obj -c "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo3\POO-labo3\Actors\Child.cpp"
+
+CMakeFiles/labo3.dir/Actors/Child.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/labo3.dir/Actors/Child.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo3\POO-labo3\Actors\Child.cpp" > CMakeFiles\labo3.dir\Actors\Child.cpp.i
+
+CMakeFiles/labo3.dir/Actors/Child.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo3.dir/Actors/Child.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo3\POO-labo3\Actors\Child.cpp" -o CMakeFiles\labo3.dir\Actors\Child.cpp.s
+
+CMakeFiles/labo3.dir/Actors/Thief.cpp.obj: CMakeFiles/labo3.dir/flags.make
+CMakeFiles/labo3.dir/Actors/Thief.cpp.obj: ../Actors/Thief.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo3\POO-labo3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/labo3.dir/Actors/Thief.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\labo3.dir\Actors\Thief.cpp.obj -c "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo3\POO-labo3\Actors\Thief.cpp"
+
+CMakeFiles/labo3.dir/Actors/Thief.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/labo3.dir/Actors/Thief.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo3\POO-labo3\Actors\Thief.cpp" > CMakeFiles\labo3.dir\Actors\Thief.cpp.i
+
+CMakeFiles/labo3.dir/Actors/Thief.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo3.dir/Actors/Thief.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo3\POO-labo3\Actors\Thief.cpp" -o CMakeFiles\labo3.dir\Actors\Thief.cpp.s
+
 # Object files for target labo3
 labo3_OBJECTS = \
 "CMakeFiles/labo3.dir/main.cpp.obj" \
@@ -189,7 +215,9 @@ labo3_OBJECTS = \
 "CMakeFiles/labo3.dir/Actors/Person.cpp.obj" \
 "CMakeFiles/labo3.dir/Containers/Container.cpp.obj" \
 "CMakeFiles/labo3.dir/Actors/IndependentPerson.cpp.obj" \
-"CMakeFiles/labo3.dir/Actors/DependentPerson.cpp.obj"
+"CMakeFiles/labo3.dir/Actors/DependentPerson.cpp.obj" \
+"CMakeFiles/labo3.dir/Actors/Child.cpp.obj" \
+"CMakeFiles/labo3.dir/Actors/Thief.cpp.obj"
 
 # External object files for target labo3
 labo3_EXTERNAL_OBJECTS =
@@ -202,11 +230,13 @@ labo3.exe: CMakeFiles/labo3.dir/Actors/Person.cpp.obj
 labo3.exe: CMakeFiles/labo3.dir/Containers/Container.cpp.obj
 labo3.exe: CMakeFiles/labo3.dir/Actors/IndependentPerson.cpp.obj
 labo3.exe: CMakeFiles/labo3.dir/Actors/DependentPerson.cpp.obj
+labo3.exe: CMakeFiles/labo3.dir/Actors/Child.cpp.obj
+labo3.exe: CMakeFiles/labo3.dir/Actors/Thief.cpp.obj
 labo3.exe: CMakeFiles/labo3.dir/build.make
 labo3.exe: CMakeFiles/labo3.dir/linklibs.rsp
 labo3.exe: CMakeFiles/labo3.dir/objects1.rsp
 labo3.exe: CMakeFiles/labo3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo3\POO-labo3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable labo3.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo3\POO-labo3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable labo3.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\labo3.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -54,23 +54,11 @@ public:
    const Person* checkState(const std::list<const Person*>& persons) const override;
 
    /**
-    * @brief Accède au message d'erreur à retourner lors d'une incompatibilité.
-    * @return Retourne le message explicatif de l'incompatibilité.
-    */
-   std::string getErrorMessage() const override;
-
-   /**
-    * @brief Assigne une valeur au message d'erreur.
-    * @param errorMessage Valeur du message d'erreur.
-    */
-   void setErrorMessage (const std::string &errorMessage);
-
-   /**
     * @brief Définit les relations de la personne.
     * @param tutor Tuteur qui protège la personne des personnes incompatibles.
     * @param persons Listes des personnes incompatibles sans le tuteur.
     */
-   void setRule(const Person *tutor, std::initializer_list<const Person *> persons);
+   virtual void setRule(const Person *tutor, std::initializer_list<const Person *> persons);
 
 };
 

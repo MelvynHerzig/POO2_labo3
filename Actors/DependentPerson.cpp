@@ -36,16 +36,6 @@ const Person *DependentPerson::checkState (const std::list<const Person *> &pers
    return nullptr;
 }
 
-std::string DependentPerson::getErrorMessage () const
-{
-   return errorMessage;
-}
-
-void DependentPerson::setErrorMessage (const string &errorMessage)
-{
-   this->errorMessage = errorMessage;
-}
-
 void DependentPerson::setRule (const Person *tutor, std::initializer_list<const Person *> persons)
 {
    this->tutor = tutor;

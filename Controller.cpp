@@ -1,5 +1,9 @@
 #include "Controller.h"
 
+#include "Actors/IndependentPerson.h"
+#include "Actors/Thief.h"
+#include "Actors/Child.h"
+
 #include <iostream> // cout
 
 using namespace std;
@@ -18,25 +22,25 @@ Controller::Controller () : leftBank("Gauche"), rightBank("Droite"), boat(2, &le
    turn = 0;
 
    // Création des personnages
-   auto thief = new DependentPerson {"voleur"};
+   auto thief = new Thief {"voleur"};
    persons.emplace_back(thief);
 
    auto policeman = new IndependentPerson {"policier"};
    persons.emplace_back(policeman);
 
-   auto julie = new DependentPerson {"julie"};
+   auto julie = new Child {"julie", false};
    persons.emplace_back(julie);
 
-   auto jeanne = new DependentPerson {"jeanne"};
+   auto jeanne = new Child {"jeanne", false};
    persons.emplace_back(jeanne);
 
    auto mother = new IndependentPerson{"mere"};
    persons.emplace_back(mother);
 
-   auto paul = new DependentPerson {"paul"};
+   auto paul = new Child {"paul", true};
    persons.emplace_back(paul);
 
-   auto pierre = new DependentPerson {"pierre"};
+   auto pierre = new Child {"pierre", true};
    persons.emplace_back(pierre);
 
    auto father = new IndependentPerson{"pere"};
@@ -44,19 +48,14 @@ Controller::Controller () : leftBank("Gauche"), rightBank("Droite"), boat(2, &le
 
    // Définition des relations.
    thief->setRule(policeman, {mother, father, paul, pierre, julie, jeanne});
-   thief->setErrorMessage("Le voleur ne peut rester seul avec la famille.");
 
    paul->setRule(father, {mother});
-   paul->setErrorMessage(paul->getName() + " ne peut rester seule avec son " + mother->getName() + " sans sa " + father->getName());
 
    pierre->setRule(father, {mother});
-   pierre->setErrorMessage(pierre->getName() + " ne peut rester seule avec son " + mother->getName() + " sans sa " + father->getName());
 
    julie->setRule(mother, {father});
-   julie->setErrorMessage(julie->getName() + " ne peut rester seule avec son " + father->getName() + " sans sa " + mother->getName());
 
    jeanne->setRule(mother, {father});
-   jeanne->setErrorMessage(jeanne->getName() + " ne peut rester seule avec son " + father->getName() + " sans sa " + mother->getName());
 
    // Préparation des rives
    resetContainers();
@@ -202,19 +201,19 @@ void Controller::tryMovePerson (Container& from, Container& to, const string &na
 
    from.removePerson(p);
 
-   string result = from.isValid();
-   if(not result.empty())
+   const Person* personWithProblem = from.isValid();
+   if(personWithProblem != nullptr)
    {
-      cout << result << endl;
+      cout << personWithProblem->getErrorMessage() << endl;
       from.addPerson(p);
       return;
    }
 
    //Modification et vérification de to.
-   result = to.isValid();
-   if(not result.empty())
+   personWithProblem = to.isValid();
+   if(personWithProblem != nullptr)
    {
-      cout << result << endl;
+      cout << personWithProblem->getErrorMessage() << endl;
       to.removePerson(p);
       from.addPerson(p);
    }

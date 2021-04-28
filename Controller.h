@@ -3,8 +3,6 @@
 
 
 #include <cstdlib> // size_t
-#include "Actors/IndependentPerson.h"
-#include "Actors/DependentPerson.h"
 #include "Containers/Bank.h"
 #include "Containers/Boat.h"
 
@@ -74,16 +72,26 @@ private:
    Boat boat;
 
    /**
-    * Liste des personnes.
+    * @brief Liste des personnes.
     */
    std::list<const Person*> persons;
 
 public:
 
    /**
-    * Constucteur
+    * @brief Constucteur
     */
    Controller();
+
+   /**
+    * @brief Constructeur de copie retiré.
+    */
+   Controller(const Controller& o) = delete;
+
+   /**
+    * @brief Opérateur d'affectation retiré.
+    */
+   Controller& operator=(const Controller& o) = delete;
 
    /**
     * @brief Destructeur

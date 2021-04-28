@@ -142,6 +142,33 @@ labo3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/build
 .PHONY : labo3/fast
 
+Actors/Child.obj: Actors/Child.cpp.obj
+
+.PHONY : Actors/Child.obj
+
+# target to build an object file
+Actors/Child.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Child.cpp.obj
+.PHONY : Actors/Child.cpp.obj
+
+Actors/Child.i: Actors/Child.cpp.i
+
+.PHONY : Actors/Child.i
+
+# target to preprocess a source file
+Actors/Child.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Child.cpp.i
+.PHONY : Actors/Child.cpp.i
+
+Actors/Child.s: Actors/Child.cpp.s
+
+.PHONY : Actors/Child.s
+
+# target to generate assembly for a file
+Actors/Child.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Child.cpp.s
+.PHONY : Actors/Child.cpp.s
+
 Actors/DependentPerson.obj: Actors/DependentPerson.cpp.obj
 
 .PHONY : Actors/DependentPerson.obj
@@ -222,6 +249,33 @@ Actors/Person.s: Actors/Person.cpp.s
 Actors/Person.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Person.cpp.s
 .PHONY : Actors/Person.cpp.s
+
+Actors/Thief.obj: Actors/Thief.cpp.obj
+
+.PHONY : Actors/Thief.obj
+
+# target to build an object file
+Actors/Thief.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Thief.cpp.obj
+.PHONY : Actors/Thief.cpp.obj
+
+Actors/Thief.i: Actors/Thief.cpp.i
+
+.PHONY : Actors/Thief.i
+
+# target to preprocess a source file
+Actors/Thief.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Thief.cpp.i
+.PHONY : Actors/Thief.cpp.i
+
+Actors/Thief.s: Actors/Thief.cpp.s
+
+.PHONY : Actors/Thief.s
+
+# target to generate assembly for a file
+Actors/Thief.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo3.dir\build.make CMakeFiles/labo3.dir/Actors/Thief.cpp.s
+.PHONY : Actors/Thief.cpp.s
 
 Containers/Bank.obj: Containers/Bank.cpp.obj
 
@@ -367,6 +421,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... labo3
+	@echo ... Actors/Child.obj
+	@echo ... Actors/Child.i
+	@echo ... Actors/Child.s
 	@echo ... Actors/DependentPerson.obj
 	@echo ... Actors/DependentPerson.i
 	@echo ... Actors/DependentPerson.s
@@ -376,6 +433,9 @@ help:
 	@echo ... Actors/Person.obj
 	@echo ... Actors/Person.i
 	@echo ... Actors/Person.s
+	@echo ... Actors/Thief.obj
+	@echo ... Actors/Thief.i
+	@echo ... Actors/Thief.s
 	@echo ... Containers/Bank.obj
 	@echo ... Containers/Bank.i
 	@echo ... Containers/Bank.s

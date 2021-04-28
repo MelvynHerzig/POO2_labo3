@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/labo3.dir/Actors/Child.cpp.obj"
   "CMakeFiles/labo3.dir/Actors/DependentPerson.cpp.obj"
   "CMakeFiles/labo3.dir/Actors/IndependentPerson.cpp.obj"
   "CMakeFiles/labo3.dir/Actors/Person.cpp.obj"
+  "CMakeFiles/labo3.dir/Actors/Thief.cpp.obj"
   "CMakeFiles/labo3.dir/Containers/Bank.cpp.obj"
   "CMakeFiles/labo3.dir/Containers/Boat.cpp.obj"
   "CMakeFiles/labo3.dir/Containers/Container.cpp.obj"

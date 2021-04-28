@@ -56,7 +56,7 @@ void Container::clear ()
    persons.clear();
 }
 
-const Person *Container::findByName (const std::string name) const
+const Person *Container::findByName (const std::string& name) const
 {
    const list<const Person*>::const_iterator it = find_if(persons.begin(), persons.end(), [&name](const Person* p) {return p->getName() == name;});
    return it != persons.end() ? *it : nullptr;
@@ -89,7 +89,7 @@ string Container::personsToString () const
    return ss.str();
 }
 
-string Container::isValid () const
+const Person* Container::isValid () const
 {
    for(const Person* person : persons)
    {
@@ -97,11 +97,11 @@ string Container::isValid () const
 
       if( problematicPerson != nullptr)
       {
-         return person->getErrorMessage();
+         return problematicPerson;
       }
    }
 
-   return string{};
+   return nullptr;
 }
 
 
