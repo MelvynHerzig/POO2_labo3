@@ -4,7 +4,7 @@
 
 using namespace std;
 
-DependentPerson::DependentPerson (const string &name) : Person(name)
+DependentPerson::DependentPerson (const string &name) : Person(name), tutor(nullptr)
 {}
 
 
@@ -13,7 +13,7 @@ bool DependentPerson::canDrive () const
    return false;
 }
 
-const Person *DependentPerson::checkState (const std::list<const Person *> &persons) const
+bool DependentPerson::checkState (const std::list<const Person *> &persons) const
 {
    // Est-ce que le tuteur est dans les parages
    bool isTutorHere = find(persons.begin(), persons.end(), tutor) != persons.end();
@@ -28,12 +28,12 @@ const Person *DependentPerson::checkState (const std::list<const Person *> &pers
       // Si elle ne sont pas compatibles et que le tuteur n'est pas là.
       if(not canStayWith && not isTutorHere)
       {
-         return person;
+         return false;
       }
    }
 
    // La personne est compatibles avec toutes les personnes dans persons.
-   return nullptr;
+   return true;
 }
 
 void DependentPerson::setRule (const Person *tutor, std::initializer_list<const Person *> persons)

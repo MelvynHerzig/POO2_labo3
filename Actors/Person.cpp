@@ -6,9 +6,9 @@
 
 using namespace std;
 
-ostream &operator<< (ostream& os, const Person &p)
+ostream& operator<< (ostream& os, const Person &p)
 {
-   return os << p.getName();
+   return p.toStream(os);
 }
 
 Person::Person (std::string   name) : name(std::move(name))

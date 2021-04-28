@@ -1,11 +1,21 @@
 #include "Thief.h"
 
-const std::string Thief::errorMessage = "Le voleur ne peut rester avec la famille sans le policier";
+#include <sstream> // stringstream
+
+using namespace std;
 
 Thief::Thief (const std::string &name) : DependentPerson(name)
 {}
 
 std::string Thief::getErrorMessage () const
 {
-   return errorMessage;
+   if(tutor == nullptr || cannotStayAloneWith.empty())
+   {
+      throw invalid_argument("Les relations sociales de " + getName() + " ne sont pas complètes");
+   }
+
+   stringstream result;
+   result << "Le voleur ne peut rester avec la famille sans le" << tutor->getName();
+
+   return result.str();
 }

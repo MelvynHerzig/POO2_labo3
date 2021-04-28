@@ -33,13 +33,17 @@ bool Container::addPerson (const Person* person)
 
 bool Container::removePerson (const Person *person)
 {
+   if(person == nullptr) return false;
+
+   bool result = false;
+
    auto foundAt = find(persons.begin(), persons.end(), person);
 
    // La personne est elle dans le conteneur ?
-   bool result = foundAt != persons.end();
+   result = foundAt != persons.end();
 
    // Si elle l'est, on la retire.
-   if(result)
+   if(foundAt != persons.end())
    {
       persons.erase(foundAt);
    }
@@ -94,11 +98,10 @@ const Person* Container::isValid () const
 {
    for(const Person* person : persons)
    {
-      const Person* problematicPerson = person->checkState(persons);
-
-      if( problematicPerson != nullptr)
+      bool isEveryOneCompatible = person->checkState(persons);
+      if( ! isEveryOneCompatible )
       {
-         return problematicPerson;
+         return person; // Sa règle n'est pas respectée.
       }
    }
 

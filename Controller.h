@@ -105,6 +105,7 @@ public:
 
 
 private:
+
    /**
     * @brief Affiche l'état de la partie.
     */

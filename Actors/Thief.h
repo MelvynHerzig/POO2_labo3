@@ -13,13 +13,6 @@
  */
 class Thief : public DependentPerson
 {
-private:
-
-   /**
-    * @brief Message d'erreur en cas d'incompatibilité.
-    */
-   static const std::string errorMessage;
-
 public:
 
    /**
@@ -31,6 +24,8 @@ public:
    /**
     * @brief Accède au message d'erreur à retourner lors d'une incompatibilité.
     * @return Retourne le message explicatif de l'incompatibilité.
+    * @throw invalid_argument Si il n'a pas de tuteur ou qu'il n'a pas au moins une
+    *        personne dans sa liste annotStayAloneWith.
     */
    std::string getErrorMessage() const override;
 };

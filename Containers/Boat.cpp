@@ -10,32 +10,31 @@ Boat::Boat (size_t capacity, const Bank* leftBank, const Bank* rightBank)
    this->currentBank = leftBank;
 }
 
-bool Boat::addPerson (const Person *person)
+bool Boat::addPerson (const Person* person)
 {
+   bool result = false;
    // Si il y a encore de la place et que la personne a pû embarquer.
-   if(nbOnBoard <  BOAT_CAPACITY && Container::addPerson(person))
+   if(nbOnBoard <  BOAT_CAPACITY && !contains(person))
    {
+      result = Container::addPerson(person);
       ++nbOnBoard;
-      return true;
    }
-   else // sinon
-   {
-      return false;
-   }
+
+   return result;
 }
 
 bool Boat::removePerson (const Person *person)
 {
+   bool result = false;
+
    // Si la personne a pû débarquer.
-   if(Container::removePerson(person))
+   if(contains(person))
    {
+      result = Container::removePerson(person);
       --nbOnBoard;
-      return true;
    }
-   else
-   {
-      return false;
-   }
+
+   return result;
 }
 
 ostream& Boat::toStream (ostream &os) const
@@ -43,7 +42,7 @@ ostream& Boat::toStream (ostream &os) const
    return os << name << ": < " << personsToString() << " >";
 }
 
-bool Boat::isDriverOnBoard()
+bool Boat::isDriverOnBoard() const
 {
    // Au moins un passager du bâteau est-il capable de le conduire ?
    return any_of(persons.begin(), persons.end(), [](const Person* p){return p->canDrive();});

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="iso-8859-15" standalone="no"?>
+<classDiagram>
+  <diagramElements defaultViewEntities="ALL" defaultViewEnum="true" defaultViewMethods="TYPE_AND_NAME" defaultVisibleTypes="true" informations="" name="">
+    <inheritance id="61082">
+      <child>61075</child>
+      <parent>60979</parent>
+    </inheritance>
+    <inheritance id="61081">
+      <child>61075</child>
+      <parent>60913</parent>
+    </inheritance>
+    <entity entityType="CLASS" id="61075" isAbstract="false" name="NewPersonType" visibility="PUBLIC"/>
+    <inheritance id="61074">
+      <child>60914</child>
+      <parent>60865</parent>
+    </inheritance>
+    <inheritance id="61073">
+      <child>60979</child>
+      <parent>60865</parent>
+    </inheritance>
+    <inheritance id="61072">
+      <child>61037</child>
+      <parent>60865</parent>
+    </inheritance>
+    <inheritance id="61071">
+      <child>60913</child>
+      <parent>60865</parent>
+    </inheritance>
+    <entity entityType="CLASS" id="61037" isAbstract="true" name="BehaviorNoRelation" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="checkStatus" returnType="bool" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="..." type="List&lt;Person&gt;"/>
+      </method>
+    </entity>
+    <entity entityType="CLASS" id="60979" isAbstract="true" name="BehaviorRelation" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="checkStatus" returnType="bool" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="..." type="List&lt;Person&gt;"/>
+      </method>
+    </entity>
+    <entity entityType="CLASS" id="60914" isAbstract="true" name="BehaviorCannotDrive" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="canDrive" returnType="bool" view="DEFAULT" visibility="PUBLIC"/>
+    </entity>
+    <entity entityType="CLASS" id="60913" isAbstract="true" name="BehaviorCanDrive" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="canDrive" returnType="bool" view="DEFAULT" visibility="PUBLIC"/>
+    </entity>
+    <entity entityType="CLASS" id="60865" isAbstract="true" name="Person" visibility="PUBLIC">
+      <method isAbstract="true" isStatic="false" name="canDrive" returnType="bool" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="true" isStatic="false" name="checkStatus()" returnType="bool" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="..." type="List&lt;Person&gt;"/>
+      </method>
+    </entity>
+  </diagramElements>
+  <umlView grid="10" name="Main view" open="true">
+    <relationView color="-12566464" relationId="61071">
+      <line>
+        <point>
+          <x>131</x>
+          <y>281</y>
+        </point>
+        <point>
+          <x>131</x>
+          <y>241</y>
+        </point>
+        <point>
+          <x>441</x>
+          <y>241</y>
+        </point>
+        <point>
+          <x>441</x>
+          <y>176</y>
+        </point>
+      </line>
+    </relationView>
+    <relationView color="-12566464" relationId="61072">
+      <line>
+        <point>
+          <x>491</x>
+          <y>281</y>
+        </point>
+        <point>
+          <x>491</x>
+          <y>241</y>
+        </point>
+        <point>
+          <x>441</x>
+          <y>241</y>
+        </point>
+        <point>
+          <x>441</x>
+          <y>176</y>
+        </point>
+      </line>
+    </relationView>
+    <relationView color="-12566464" relationId="61073">
+      <line>
+        <point>
+          <x>731</x>
+          <y>281</y>
+        </point>
+        <point>
+          <x>731</x>
+          <y>241</y>
+        </point>
+        <point>
+          <x>441</x>
+          <y>241</y>
+        </point>
+        <point>
+          <x>441</x>
+          <y>176</y>
+        </point>
+      </line>
+    </relationView>
+    <relationView color="-12566464" relationId="61074">
+      <line>
+        <point>
+          <x>291</x>
+          <y>281</y>
+        </point>
+        <point>
+          <x>291</x>
+          <y>241</y>
+        </point>
+        <point>
+          <x>441</x>
+          <y>241</y>
+        </point>
+        <point>
+          <x>441</x>
+          <y>176</y>
+        </point>
+      </line>
+    </relationView>
+    <relationView color="-12566464" relationId="61081">
+      <line>
+        <point>
+          <x>431</x>
+          <y>441</y>
+        </point>
+        <point>
+          <x>431</x>
+          <y>411</y>
+        </point>
+        <point>
+          <x>131</x>
+          <y>411</y>
+        </point>
+        <point>
+          <x>131</x>
+          <y>351</y>
+        </point>
+      </line>
+    </relationView>
+    <relationView color="-12566464" relationId="61082">
+      <line>
+        <point>
+          <x>431</x>
+          <y>441</y>
+        </point>
+        <point>
+          <x>431</x>
+          <y>411</y>
+        </point>
+        <point>
+          <x>731</x>
+          <y>411</y>
+        </point>
+        <point>
+          <x>731</x>
+          <y>351</y>
+        </point>
+      </line>
+    </relationView>
+    <componentView color="-2079" componentID="60865" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>310</x>
+        <y>90</y>
+        <w>260</w>
+        <h>85</h>
+      </geometry>
+    </componentView>
+    <componentView color="-3342388" componentID="60913" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>50</x>
+        <y>280</y>
+        <w>150</w>
+        <h>70</h>
+      </geometry>
+    </componentView>
+    <componentView color="-3342388" componentID="60914" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>210</x>
+        <y>280</y>
+        <w>150</w>
+        <h>70</h>
+      </geometry>
+    </componentView>
+    <componentView color="-26215" componentID="60979" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>610</x>
+        <y>280</y>
+        <w>230</w>
+        <h>70</h>
+      </geometry>
+    </componentView>
+    <componentView color="-26215" componentID="61037" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>370</x>
+        <y>280</y>
+        <w>230</w>
+        <h>70</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="61075" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>350</x>
+        <y>440</y>
+        <w>150</w>
+        <h>55</h>
+      </geometry>
+    </componentView>
+    <note color="-2079" content="retourne true">
+      <noteGeometry>
+        <x>16</x>
+        <y>202</y>
+        <w>91</w>
+        <h>45</h>
+      </noteGeometry>
+      <noteLine color="-12566464" relationId="60913">
+        <point>
+          <x>31</x>
+          <y>248</y>
+        </point>
+        <point>
+          <x>51</x>
+          <y>331</y>
+        </point>
+      </noteLine>
+    </note>
+    <note color="-2079" content="retourne false">
+      <noteGeometry>
+        <x>176</x>
+        <y>162</y>
+        <w>91</w>
+        <h>45</h>
+      </noteGeometry>
+      <noteLine color="-12566464" relationId="60914">
+        <point>
+          <x>191</x>
+          <y>208</y>
+        </point>
+        <point>
+          <x>211</x>
+          <y>321</y>
+        </point>
+      </noteLine>
+    </note>
+    <note color="-2079" content="retourne true">
+      <noteGeometry>
+        <x>606</x>
+        <y>172</y>
+        <w>88</w>
+        <h>45</h>
+      </noteGeometry>
+      <noteLine color="-12566464" relationId="61037">
+        <point>
+          <x>607</x>
+          <y>181</y>
+        </point>
+        <point>
+          <x>581</x>
+          <y>281</y>
+        </point>
+      </noteLine>
+    </note>
+    <note color="-2079" content="fait la vérification et retourne le résultat">
+      <noteGeometry>
+        <x>756</x>
+        <y>172</y>
+        <w>90</w>
+        <h>75</h>
+      </noteGeometry>
+      <noteLine color="-12566464" relationId="60979">
+        <point>
+          <x>801</x>
+          <y>248</y>
+        </point>
+        <point>
+          <x>821</x>
+          <y>281</y>
+        </point>
+      </noteLine>
+    </note>
+    <note color="-2079" content="Chaque nouvelle personne doit implémenter un comportement vert et un comportement rouge">
+      <noteGeometry>
+        <x>520</x>
+        <y>450</y>
+        <w>290</w>
+        <h>45</h>
+      </noteGeometry>
+    </note>
+  </umlView>
+</classDiagram>

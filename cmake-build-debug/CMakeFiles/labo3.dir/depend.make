@@ -48,7 +48,11 @@ CMakeFiles/labo3.dir/Controller.cpp.obj: ../Containers/Container.h
 CMakeFiles/labo3.dir/Controller.cpp.obj: ../Controller.cpp
 CMakeFiles/labo3.dir/Controller.cpp.obj: ../Controller.h
 
+CMakeFiles/labo3.dir/main.cpp.obj: ../Actors/Child.h
+CMakeFiles/labo3.dir/main.cpp.obj: ../Actors/DependentPerson.h
+CMakeFiles/labo3.dir/main.cpp.obj: ../Actors/IndependentPerson.h
 CMakeFiles/labo3.dir/main.cpp.obj: ../Actors/Person.h
+CMakeFiles/labo3.dir/main.cpp.obj: ../Actors/Thief.h
 CMakeFiles/labo3.dir/main.cpp.obj: ../Containers/Bank.h
 CMakeFiles/labo3.dir/main.cpp.obj: ../Containers/Boat.h
 CMakeFiles/labo3.dir/main.cpp.obj: ../Containers/Container.h

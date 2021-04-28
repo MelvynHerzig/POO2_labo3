@@ -30,14 +30,11 @@ private:
    const std::string name;
 
 public:
-
-   Person() = default;
-
    /**
     * @brief Constructeur.
     * @param name Nom du personnage.
     */
-   explicit Person(std::string   name);
+   explicit Person(std::string name);
 
    /**
     * @brief Destructeur.
@@ -66,14 +63,15 @@ public:
    /**
     * @brief Vérifie si elle peut rester avec les personnes en argument.
     * @param persons Personnes qui accompagnent la personne courante.
-    * @return Retourne nullptr si la personne courante peut restes avec les personnes.
-    *         Sinon retourne le pointeur sur la personne problématique.
+    * @return Retourne true si la personne courante peut rester avec les personnes.
+    *         Sinon retourne false.
     */
-   virtual const Person* checkState(const std::list<const Person*>& persons) const = 0;
+   virtual bool checkState(const std::list<const Person*>& persons) const = 0;
 
    /**
     * @brief Accède au message d'erreur à retourner lors d'une incompatibilité.
     * @return Retourne le message explicatif de l'incompatibilité.
+    * @throw invalid_argument En cas de problème de construction du message.
     */
    virtual std::string getErrorMessage() const = 0;
 };

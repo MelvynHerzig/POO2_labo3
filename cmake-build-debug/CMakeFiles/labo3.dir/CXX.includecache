@@ -6,24 +6,38 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Child.h
+string
+-
+DependentPerson.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/DependentPerson.h
+
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/DependentPerson.h
+string
+-
+Person.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Person.h
+
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/IndependentPerson.h
+Person.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Person.h
+
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Person.h
 string
 -
 list
 -
 
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Thief.h
+string
+-
+DependentPerson.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/DependentPerson.h
+
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Bank.h
 Container.h
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Container.h
 ostream
--
-
-C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Boat.cpp
-Boat.h
-C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Boat.h
-ostream
--
-algorithm
 -
 
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Boat.h
@@ -43,4 +57,26 @@ algorithm
 -
 ../Actors/Person.h
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Person.h
+
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Controller.h
+cstdlib
+-
+Containers/Bank.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Bank.h
+Containers/Boat.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Boat.h
+
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/main.cpp
+iostream
+-
+cstdlib
+-
+Controller.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Controller.h
+Actors/Thief.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Thief.h
+Actors/IndependentPerson.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/IndependentPerson.h
+Actors/Child.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Child.h
 

@@ -55,7 +55,7 @@ public:
    * @param person Personne à ajouter.
    * @return Retourne vrai si la personne a été ajoutée sinon faux.
    * @details Si la personne est déjà dans le conteneur ou que le pointeur
-   *          est null, la fonction est sans effet et retourne faux.
+   *          est null, ou bateau plein la fonction est sans effet return false sinon true.
    */
    bool addPerson (const Person* person) override;
 
@@ -64,7 +64,7 @@ public:
     * @param person Personne à enlever.
     * @return Retourne vrai si la personne a été retirée sinon faux.
     * @details Si la personne n'est pas dans le conteneur ou que le pointeur
-    *          est null, la fonction est sans effet et retourne faux..
+    *          est null, la fonction est sans effet return false sinon true.
     */
    bool removePerson (const Person* person) override;
 
@@ -79,7 +79,7 @@ public:
     * @brief Vérifie si il y a un conducteur de bateau à bord.
     * @return Vrai si il y a un conducteur à bord.
     */
-   bool isDriverOnBoard();
+   bool isDriverOnBoard() const;
 
    /**
     * @brief Le bateau change de rive.

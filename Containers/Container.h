@@ -66,7 +66,7 @@ public:
     * @param person Personne à ajouter.
     * @return Retourne vrai si la personne a été ajoutée sinon faux.
     * @details Si la personne est déjà dans le conteneur ou que le pointeur
-    *          est null, la fonction est sans effet et retourne faux.
+    *          est null, la fonction est sans effet return false sinon true.
     */
    virtual bool addPerson(const Person* person);
 
@@ -75,7 +75,7 @@ public:
     * @param person Personne à enlever.
     * @return Retourne vrai si la personne a été retirée sinon faux.
     * @details Si la personne n'est pas dans le conteneur ou que le pointeur
-    *          est null, la fonction est sans effet et retourne faux..
+    *          est null, la fonction est sans effet return false sinon true.
     */
    virtual bool removePerson(const Person* person);
 
@@ -93,7 +93,7 @@ public:
    /**
     * @brief Retourne le pointeur de la personne en fonction de son nom.
     * @param name Nom de la personne à chercher.
-    * @return Retourne le pointeur de la personne correspondante si elle existe
+    * @return Retourne le pointeur de la première personne correspondante si elle existe
     *         autrement nullptr.
     */
    const Person* findByName(const std::string& name) const;
@@ -109,7 +109,7 @@ public:
     * @param os Flux recevant le conteneur
     * @return Retourne le flux avec le conteneur inséré.
     */
-   virtual std::ostream &toStream (std::ostream& os) const = 0;
+   virtual std::ostream& toStream (std::ostream& os) const = 0;
 
 protected:
 

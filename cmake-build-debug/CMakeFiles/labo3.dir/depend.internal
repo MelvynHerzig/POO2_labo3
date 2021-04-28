@@ -49,7 +49,11 @@ CMakeFiles/labo3.dir/Controller.cpp.obj
  C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Controller.cpp
  C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Controller.h
 CMakeFiles/labo3.dir/main.cpp.obj
+ C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Child.h
+ C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/DependentPerson.h
+ C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/IndependentPerson.h
  C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Person.h
+ C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Actors/Thief.h
  C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Bank.h
  C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Boat.h
  C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo3/POO-labo3/Containers/Container.h

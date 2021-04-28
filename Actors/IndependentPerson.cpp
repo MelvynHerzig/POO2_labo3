@@ -12,9 +12,9 @@ bool IndependentPerson::canDrive () const
    return true;
 }
 
-const Person *IndependentPerson::checkState (const std::list<const Person *> &persons) const
+bool IndependentPerson::checkState (const std::list<const Person *> &persons) const
 {
-   return nullptr;
+   return true;
 }
 
 std::string IndependentPerson::getErrorMessage () const

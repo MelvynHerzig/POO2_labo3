@@ -9,12 +9,12 @@
 using namespace std;
 
 const char Controller::PRINT_STATE = 'p';
-const char Controller::IN_BOAT = 'e';
-const char Controller::OUT_BOAT = 'd';
-const char Controller::MOVE_BOAT = 'm';
-const char Controller::RESET = 'r';
-const char Controller::QUIT = 'q';
-const char Controller::PRINT_MENU = 'h';
+const char Controller::IN_BOAT     = 'e';
+const char Controller::OUT_BOAT    = 'd';
+const char Controller::MOVE_BOAT   = 'm';
+const char Controller::RESET       = 'r';
+const char Controller::QUIT        = 'q';
+const char Controller::PRINT_MENU  = 'h';
 
 Controller::Controller () : leftBank("Gauche"), rightBank("Droite"), boat(2, &leftBank, &rightBank)
 {
@@ -124,6 +124,8 @@ void Controller::play ()
       // Espacement entre les affichages
       cout << endl << endl;
    }
+
+   cout << " BRAVO, tout le monde est passe. Fin de la partie." << endl;
 }
 
 void Controller::display () const
@@ -203,24 +205,34 @@ void Controller::tryMovePerson (Container& from, Container& to, const string &na
 
    ++turn;
 
-   from.removePerson(p);
+   bool opSuccess = false;
+
+   opSuccess = from.removePerson(p);
 
    const Person* personWithProblem = from.isValid();
-   if(personWithProblem != nullptr)
+   if(personWithProblem != nullptr || !opSuccess)
    {
-      displayError(personWithProblem->getErrorMessage());
       from.addPerson(p);
+
+      if(personWithProblem != nullptr)
+      {
+         displayError(personWithProblem->getErrorMessage());
+      }
       return;
    }
 
    //Modification et vérification de to.
-   to.addPerson(p);
+   opSuccess = to.addPerson(p);
    personWithProblem = to.isValid();
-   if(personWithProblem != nullptr)
+   if(personWithProblem != nullptr || !opSuccess)
    {
-      displayError(personWithProblem->getErrorMessage());
       to.removePerson(p);
       from.addPerson(p);
+
+      if(personWithProblem != nullptr)
+      {
+         displayError(personWithProblem->getErrorMessage());
+      }
    }
 }
 
