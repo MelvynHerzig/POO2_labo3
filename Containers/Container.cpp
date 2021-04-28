@@ -2,18 +2,19 @@
 
 #include <iostream> // cout
 #include <sstream>  // stringstream
+#include <utility>
 
 using namespace std;
 
-Container::Container (std::string  name) : name(std::move(name))
+Container::Container (std::string name) : name(std::move(name))
 {}
 
-std::ostream &operator<<(std::ostream &os, const Container& container)
+std::ostream& operator<<(std::ostream &os, const Container& container)
 {
    return container.toStream(os);
 }
 
-void Container::addPersons (std::list<const Person *> persons)
+void Container::addPersons (const std::list<const Person *>& persons)
 {
    for(const Person* person : persons)
    {
@@ -21,7 +22,7 @@ void Container::addPersons (std::list<const Person *> persons)
    }
 }
 
-bool Container::addPerson (const Person *person)
+bool Container::addPerson (const Person* person)
 {
    if(person == nullptr || contains(person)) return false;
 
@@ -62,7 +63,7 @@ const Person *Container::findByName (const std::string& name) const
    return it != persons.end() ? *it : nullptr;
 }
 
-bool Container::contains (const Person *person)
+bool Container::contains (const Person *person) const
 {
    return find(persons.begin(), persons.end(), person) != persons.end();
 }

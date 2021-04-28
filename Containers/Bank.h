@@ -26,7 +26,7 @@ public:
     * @param os Flux recevant le conteneur
     * @return Retourne le flux avec le conteneur inséré.
     */
-   std::ostream &toStream (std::ostream &os) const override;
+   std::ostream& toStream (std::ostream& os) const override;
 };
 
 

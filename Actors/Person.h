@@ -5,6 +5,16 @@
 #include <string> // string
 #include <list>   // list
 
+class Person;
+
+/**
+ * @brief Affiche une personne dans un flux.
+ * @param os Flux dans lequel afficher la personne.
+ * @param container Personne concernée.
+ * @return Retourne le flux avec la personne.
+ */
+std::ostream& operator<<(std::ostream& os, const Person& p);
+
 /**
  * @brief Classe modélisant la base des personnes
  * @date 21/04/2021
@@ -14,9 +24,6 @@
 class Person
 {
 private:
-
-   friend std::ostream& operator<<(std::ostream& os, const Person& p);
-
    /**
     * @brief nom du personnage.
     */
@@ -41,7 +48,14 @@ public:
     * @brief Accesseur nom de la personne.
     * @return Retourne le nom de la personne.
     */
-   const std::string &getName () const;
+    std::string getName() const;
+
+   /**
+    * @brief Insère une personne dans un flux.
+    * @param os Flux recevant la personne
+    * @return Retourne le flux avec la personne insérée.
+    */
+    virtual std::ostream &toStream (std::ostream& os) const;
 
    /**
     * @brief Détermine si la personne peut conduire le bateau.

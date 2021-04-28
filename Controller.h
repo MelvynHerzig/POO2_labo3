@@ -132,6 +132,12 @@ private:
     * @brief Affiche le menu, c-à-d les contrôle pour jouer.
     */
    static void showMenu();
+
+   /**
+    * @brief Affiche un message d'erreur.
+    * @param error Message à afficher;
+    */
+   static void displayError(const std::string& error);
 };
 
 

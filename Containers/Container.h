@@ -45,7 +45,7 @@ public:
     * Constructeur
     * @param name Nom du conteneur.
     */
-   explicit Container(std::string  name);
+   explicit Container(std::string name);
 
    /**
     * @brief Destructeur.
@@ -59,7 +59,7 @@ public:
     * @details Si la personne est déjà dans le conteneur ou que le pointeur
     *          est null, la fonction ne fait rien.
     */
-   void addPersons(std::list<const Person*> persons);
+   void addPersons(const std::list<const Person*>& persons);
 
    /**
     * @brief Ajoute une personne au conteneur.
@@ -109,7 +109,7 @@ public:
     * @param os Flux recevant le conteneur
     * @return Retourne le flux avec le conteneur inséré.
     */
-   virtual std::ostream &toStream (std::ostream &os) const = 0;
+   virtual std::ostream &toStream (std::ostream& os) const = 0;
 
 protected:
 
@@ -118,7 +118,7 @@ protected:
     * @param person Personne à vérifier.
     * @return Retourne vrai si la personne est dans le contenuer sinon faux.
     */
-   bool contains(const Person* person);
+   bool contains(const Person* person) const;
 
    /**
     * @brief Insère les personnes dans un flux.

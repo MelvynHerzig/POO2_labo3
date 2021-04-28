@@ -5,10 +5,8 @@
 using namespace std;
 
 Boat::Boat (size_t capacity, const Bank* leftBank, const Bank* rightBank)
-           : Container("Bateau"), BOAT_CAPACITY(capacity)
+           : Container("Bateau"), BOAT_CAPACITY(capacity), LEFT_BANK(leftBank), RIGHT_BANK(rightBank)
 {
-   this->leftBank = leftBank;
-   this->rightBank = rightBank;
    this->currentBank = leftBank;
 }
 
@@ -47,13 +45,13 @@ ostream& Boat::toStream (ostream &os) const
 
 bool Boat::isDriverOnBoard()
 {
-   // Au moins un passager du bâteau est-il capable de le conduir ?
+   // Au moins un passager du bâteau est-il capable de le conduire ?
    return any_of(persons.begin(), persons.end(), [](const Person* p){return p->canDrive();});
 }
 
 void Boat::navigate ()
 {
-   currentBank = (currentBank == leftBank) ? rightBank : leftBank;
+   currentBank = (currentBank == LEFT_BANK) ? RIGHT_BANK : LEFT_BANK;
 }
 
 const Bank *Boat::getCurrentBank () const

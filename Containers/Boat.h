@@ -28,17 +28,17 @@ private:
    /**
     * @brief Rive gauche.
     */
-   const Bank *leftBank;
+   const Bank* const LEFT_BANK;
 
    /**
     * @brief Rive droite.
     */
-   const Bank *rightBank;
+   const Bank* const RIGHT_BANK;
 
    /**
     * @brief Rive accostée.
     */
-   const Bank *currentBank;
+   const Bank* currentBank;
 
 public:
 
@@ -48,7 +48,7 @@ public:
     * @param leftBank Rive gauche (rive de départ).
     * @param rightBank Rive droite.
     */
-    Boat (size_t capacity, const Bank *leftBank, const Bank *rightBank);
+    Boat (size_t capacity, const Bank* leftBank, const Bank* rightBank);
 
    /**
    * @brief Ajoute une personne au conteneur.
@@ -57,7 +57,7 @@ public:
    * @details Si la personne est déjà dans le conteneur ou que le pointeur
    *          est null, la fonction est sans effet et retourne faux.
    */
-   bool addPerson (const Person *person) override;
+   bool addPerson (const Person* person) override;
 
    /**
     * @brief Enlève une personne au conteneur.
@@ -66,14 +66,14 @@ public:
     * @details Si la personne n'est pas dans le conteneur ou que le pointeur
     *          est null, la fonction est sans effet et retourne faux..
     */
-   bool removePerson (const Person *person) override;
+   bool removePerson (const Person* person) override;
 
    /**
     * @brief Insère un conteneur dans un flux.
     * @param os Flux recevant le conteneur
     * @return Retourne le flux avec le conteneur inséré.
     */
-   std::ostream &toStream (std::ostream &os) const override;
+   std::ostream& toStream (std::ostream& os) const override;
 
    /**
     * @brief Vérifie si il y a un conducteur de bateau à bord.
@@ -90,7 +90,7 @@ public:
     * @brief Accesseur à la rive sur laquelle le bateau est accosté.
     * @return Retourne la rive sur laquelle le bateau est accosté.
     */
-   const Bank *getCurrentBank () const;
+   const Bank* getCurrentBank () const;
 };
 
 

@@ -8,16 +8,21 @@ using namespace std;
 
 ostream &operator<< (ostream& os, const Person &p)
 {
-   return os << p.name;
+   return os << p.getName();
 }
 
 Person::Person (std::string   name) : name(std::move(name))
 {}
 
 
-const string& Person::getName () const
+string Person::getName () const
 {
    return name;
+}
+
+std::ostream &Person::toStream (ostream &os) const
+{
+   return os << name;
 }
 
 

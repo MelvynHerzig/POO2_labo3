@@ -118,7 +118,7 @@ void Controller::play ()
             return;
 
          default:
-            cout << "Commande inconnue" << endl;
+            displayError( "commande inconnue.");
       }
 
       // Espacement entre les affichages
@@ -188,6 +188,10 @@ void Controller::tryMoveBoat ()
    {
       boat.navigate();
    }
+   else
+   {
+      displayError("Personne n'est capable de piloter le bateau.");
+   }
 }
 
 void Controller::tryMovePerson (Container& from, Container& to, const string &name)
@@ -204,16 +208,17 @@ void Controller::tryMovePerson (Container& from, Container& to, const string &na
    const Person* personWithProblem = from.isValid();
    if(personWithProblem != nullptr)
    {
-      cout << personWithProblem->getErrorMessage() << endl;
+      displayError(personWithProblem->getErrorMessage());
       from.addPerson(p);
       return;
    }
 
    //Modification et vérification de to.
+   to.addPerson(p);
    personWithProblem = to.isValid();
    if(personWithProblem != nullptr)
    {
-      cout << personWithProblem->getErrorMessage() << endl;
+      displayError(personWithProblem->getErrorMessage());
       to.removePerson(p);
       from.addPerson(p);
    }
@@ -226,7 +231,12 @@ void Controller::showMenu ()
         << OUT_BOAT    << " <nom>: debarquer <nom>" << endl
         << MOVE_BOAT   << "      : deplacer bateau" << endl
         << RESET       << "      : reinitialiser  " << endl
-        << QUIT        << "      : quittter       " << endl
+        << QUIT        << "      : quitter       " << endl
         << PRINT_MENU  << "      : menu           " << endl;
+}
+
+void Controller::displayError (const string &error)
+{
+   cout << "### " << error << endl;
 }
 
