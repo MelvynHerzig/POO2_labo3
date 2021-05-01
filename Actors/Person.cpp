@@ -1,8 +1,6 @@
 #include "Person.h"
 
-#include <ostream>   // ostream
-#include <algorithm> // find
-#include <utility>
+#include <ostream> // ostream
 
 using namespace std;
 
@@ -11,9 +9,8 @@ ostream& operator<< (ostream& os, const Person &p)
    return p.toStream(os);
 }
 
-Person::Person (std::string   name) : name(std::move(name))
+Person::Person (const std::string& name) : name(name)
 {}
-
 
 string Person::getName () const
 {

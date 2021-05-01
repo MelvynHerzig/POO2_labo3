@@ -4,7 +4,7 @@
 
 using namespace std;
 
-IndependentPerson::IndependentPerson (const std::string &name) : Person(name)
+IndependentPerson::IndependentPerson (const std::string& name) : Person(name)
 {}
 
 bool IndependentPerson::canDrive () const

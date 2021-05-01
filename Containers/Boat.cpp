@@ -57,3 +57,9 @@ const Bank *Boat::getCurrentBank () const
 {
    return currentBank;
 }
+
+void Boat::clear ()
+{
+   Container::clear();
+   nbOnBoard = 0;
+}

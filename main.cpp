@@ -14,6 +14,7 @@
 #include <iostream>
 
 #include <cstdlib>                     // EXIT_SUCCESS
+#include <cstring>
 #include "Controller.h"                // Controller, play
 #include "Actors/Thief.h"              // Thief
 #include "Actors/IndependentPerson.h"  // IndependentPerson
@@ -91,7 +92,28 @@ bool testWithTutor(const Person* dependantPerson, const Person* tutor, initializ
    return true;
 }
 
+/**
+ * Tente de surchager le bateau avec 3 personnes
+ * @param persons Personne à ajouter au bateau.
+ * @return Retourne vrai si réussi sinon false.
+ */
+bool testBoatOverLoad(const Person* persons[3])
+{
+   Boat boat{2, nullptr, nullptr};
 
+   boat.addPerson(persons[0]);
+   boat.addPerson(persons[1]);
+
+   // Doit être faux
+   bool result1 = boat.addPerson(persons[3]);
+
+   boat.removePerson(persons[1]);
+
+   // Doit être vrai
+   bool result2 = boat.addPerson(persons[3]);
+
+   return !result1 && result2;
+}
 
 
 /**
@@ -181,19 +203,37 @@ void test()
       cout << "testGirlsWithDadWithMom) REUSSITE" << endl;
    }
 
+   cout << "\n***** Test: Le bateau ne peut pas contenir plus de deux personnes ******" << endl;
+   const Person* threePersons[] = {&father, &mother, &policeman};
+   if(!testBoatOverLoad(threePersons))
+   {
+      cout << "testOverloadingBoat) ECHEC" << endl;
+   }
+   else
+   {
+      cout << "testOverloadingBoat) REUSSITE" << endl;
+   }
 }
 
 /**
- * @brief Point d'entrée du programme, lance la partie.
+ * @brief Point d'entrée du programme, lance la partie si pas d'argument ou
+ *        exécute les tests si argv[1] == "test".
  * @return EXIT_SUCCES si tout s'est bien déroulé.
  */
-int main()
+int main(int argc, char* argv[])
 {
-   test();
+   if(argc == 2 && strcmp(argv[1], "test") == 0) // Test mode
+   {
+      test();
+   }
+   else // play mode
+   {
+      Controller controller;
 
-   /*Controller controller;
+      controller.play();
+  }
 
-   controller.play();*/
-
-   return EXIT_SUCCESS;
+  return EXIT_SUCCESS;
 }
+
+

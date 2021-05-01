@@ -80,7 +80,7 @@ void Controller::play ()
    {
       display();
 
-      cout << turn << "> ";
+      cout << turn << ">";
       cin >> input;
 
       Bank& current = (boat.getCurrentBank() == &rightBank) ? rightBank : leftBank;
@@ -88,7 +88,6 @@ void Controller::play ()
       switch(input)
       {
          case PRINT_STATE:
-            display();
             break;
 
          case PRINT_MENU:
@@ -243,7 +242,7 @@ void Controller::showMenu ()
         << OUT_BOAT    << " <nom>: debarquer <nom>" << endl
         << MOVE_BOAT   << "      : deplacer bateau" << endl
         << RESET       << "      : reinitialiser  " << endl
-        << QUIT        << "      : quitter       " << endl
+        << QUIT        << "      : quitter        " << endl
         << PRINT_MENU  << "      : menu           " << endl;
 }
 

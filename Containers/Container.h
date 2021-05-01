@@ -32,7 +32,7 @@ protected:
    /**
     * @brief Nom du conteneur.
     */
-   std::string name;
+   const std::string name;
 
    /**
     * @brief Liste des personnes dans le conteneur.
@@ -45,7 +45,7 @@ public:
     * Constructeur
     * @param name Nom du conteneur.
     */
-   explicit Container(std::string name);
+   explicit Container(const std::string& name);
 
    /**
     * @brief Destructeur.
@@ -88,7 +88,7 @@ public:
    /**
     * @brief Vide le conteneur.
     */
-   void clear();
+   virtual void clear();
 
    /**
     * @brief Retourne le pointeur de la personne en fonction de son nom.

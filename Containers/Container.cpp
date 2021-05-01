@@ -2,11 +2,10 @@
 
 #include <iostream> // cout
 #include <sstream>  // stringstream
-#include <utility>
 
 using namespace std;
 
-Container::Container (std::string name) : name(std::move(name))
+Container::Container (const std::string& name) : name(name)
 {}
 
 std::ostream& operator<<(std::ostream &os, const Container& container)

@@ -91,6 +91,11 @@ public:
     * @return Retourne la rive sur laquelle le bateau est accosté.
     */
    const Bank* getCurrentBank () const;
+
+   /**
+    * @brief Vide le conteneur et remet le compteur à 0.
+    */
+   virtual void clear();
 };
 
 

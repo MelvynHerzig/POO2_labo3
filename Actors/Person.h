@@ -34,7 +34,7 @@ public:
     * @brief Constructeur.
     * @param name Nom du personnage.
     */
-   explicit Person(std::string name);
+   explicit Person(const std::string& name);
 
    /**
     * @brief Destructeur.
