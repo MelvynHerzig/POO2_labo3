@@ -32,7 +32,7 @@ protected:
    /**
     * @brief Nom du conteneur.
     */
-   const std::string name;
+   std::string name;
 
    /**
     * @brief Liste des personnes dans le conteneur.

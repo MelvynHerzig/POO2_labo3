@@ -27,7 +27,7 @@ private:
    /**
     * @brief nom du personnage.
     */
-   const std::string name;
+   std::string name;
 
 public:
    /**
